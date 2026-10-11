@@ -226,7 +226,7 @@
   function setupTheme() {
     var toggle = document.getElementById("theme-toggle");
     var savedTheme = localStorage.getItem("tejasPortfolioTheme");
-    if (savedTheme === "dark") {
+    if (savedTheme !== "light") {
       document.body.classList.add("portfolio-dark");
     }
     toggle.addEventListener("click", function () {
